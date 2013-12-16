@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.contactlensreminder"
+    android:versionCode="2"
+    android:versionName="@string/version" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LensReminderApplication"
+            android:label="@string/title_activity_lens"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LensActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_lens" >
+        </activity>
+        <activity
+            android:name=".PrescriptionMenu"
+            android:label="@string/prescriptionMenu" >
+        </activity>
+        <activity
+            android:name=".SettingsLayout"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/prescriptionMenu" >
+        </activity>
+        <activity
+            android:name=".AboutLayout"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/about" >
+        </activity>
+
+        <receiver android:name=".AlarmRightReceiver" />
+        <receiver android:name=".AlarmLeftReceiver" />
+        <receiver android:name=".OrderReceiver" />
+        <receiver android:name=".AlarmService" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
