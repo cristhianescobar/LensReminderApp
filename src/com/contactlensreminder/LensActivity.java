@@ -169,6 +169,11 @@ public class LensActivity extends Activity {
 		super.onPause();
 	}
 
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+    }
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_lens, menu);
