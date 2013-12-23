@@ -227,38 +227,18 @@ public class LensActivity extends Activity {
 			numView.setTextColor(Color.BLACK);
 
 			if (divideBy==divideDay){
-				if (displayNum!=1){
-					strView.setText("Days Left");
-				}
-				else {
-					strView.setText("Day Left");
-				}
+                strView.setText(displayNum != 1 ? "Days Left" : "Day Left");
 
 			}
 			else if (divideBy==divideHour){
-				if (displayNum!=1){
-					strView.setText("Hours Left");
-				}
-				else {
-					strView.setText("Hour Left");
-				}
+                strView.setText(displayNum != 1 ? "Hours Left" : "Hour Left");
 			}
 			else if (divideBy==divideMin){
-				if (displayNum!=1){
-					strView.setText("Mins Left");
-				}
-				else {
-					strView.setText("Min Left");
-				}
+                strView.setText(displayNum != 1 ? "Mins Left" : "Min Left");
 
 			}
 			else if (divideBy==divideSec){
-				if (displayNum!=1){
-					strView.setText("Secs Left");
-				}
-				else {
-					strView.setText("Sec Left");
-				}				
+                strView.setText(displayNum != 1 ? "Secs Left" : "Sec Left");
 			}
 			if (displayNum!=0){
 				numView.setText(Integer.toString(displayNum));
@@ -270,38 +250,18 @@ public class LensActivity extends Activity {
 			strView.setTextColor(Color.RED);
 			if (divideBy==divideDay){
 
-				if (displayNum!=1){
-					strView.setText("Days Past");
-				}
-				else {
-					strView.setText("Day Past");
-				}
+                strView.setText(displayNum != 1 ? "Days Past" : "Day Past");
 			}
 			else if (divideBy==divideHour){
-				if (displayNum!=1){
-					strView.setText("Hours Past");
-				}
-				else {
-					strView.setText("Hour Past");
-				}
+                strView.setText(displayNum != 1 ? "Hours Past" : "Hour Past");
 
 			}
 			else if (divideBy==divideMin){
-				if (displayNum!=1){
-					strView.setText("Mins Past");
-				}
-				else {
-					strView.setText("Min Past");
-				}
+                strView.setText(displayNum != 1 ? "Mins Past" : "Min Past");
 
 			}
 			else if (divideBy==divideSec){
-				if (displayNum!=1){
-					strView.setText("Secs Past");
-				}
-				else {
-					strView.setText("Sec Past");
-				}
+                strView.setText(displayNum != 1 ? "Secs Past" : "Sec Past");
 
 			}
 			if (displayNum!=0){
