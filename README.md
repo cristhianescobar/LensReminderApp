@@ -1,5 +1,5 @@
 LensReminderApp
-Ananta Uprety && Cristhian Escobar
+ Cristhian Escobar && Ananta Uprety
 ===============
 
 Contact Lens Notifier Free (Available on Google Play)
